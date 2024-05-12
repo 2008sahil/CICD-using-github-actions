@@ -8,6 +8,8 @@ on:
 
 permissions: 
   contents: write
+  pages: write      # to deploy to Pages
+  id-token: write
 
 jobs:
   build:
@@ -41,4 +43,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-          folder: ./build # The folder the action should deploy.
+          branch: Build
+          folder: / # The folder the action should deploy.
