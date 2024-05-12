@@ -42,3 +42,4 @@ jobs:
         with:
           branch: build
           folder: / # The folder the action should deploy.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
