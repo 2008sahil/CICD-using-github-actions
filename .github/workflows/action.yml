@@ -6,6 +6,9 @@ on:
       - master # Remove this line if your primary branch is "main"
       - main # Remove this line if your primary branch is "master"
 
+permissions: 
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
