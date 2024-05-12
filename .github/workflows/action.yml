@@ -8,8 +8,6 @@ on:
 
 permissions: 
   contents: write
-  pages: write      # to deploy to Pages
-  id-token: write
 
 jobs:
   build:
@@ -34,14 +32,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
           MESSAGE: "Build: ({sha}) {msg}" 
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Deployment Started 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-          branch: Build
-          folder: / # The folder the action should deploy.
