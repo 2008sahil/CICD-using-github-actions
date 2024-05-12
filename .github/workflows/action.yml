@@ -40,6 +40,6 @@ jobs:
       - name: Deployment Started 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: build
+          branch: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-          folder: / # The folder the action should deploy.
+          folder: build # The folder the action should deploy.
