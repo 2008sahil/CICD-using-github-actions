@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn CICD USING GITHUB ACTIONS
         </a>
       </header>
     </div>
