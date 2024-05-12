@@ -3,8 +3,8 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - master # Remove this line if your primary branch is "main"
-      - main # Remove this line if your primary branch is "master"
+      - master
+      - main 
 
 permissions: 
   contents: write
